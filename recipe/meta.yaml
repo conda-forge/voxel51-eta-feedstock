@@ -1,13 +1,13 @@
 {% set name = "voxel51-eta" %}
-{% set version = "0.12.6" %}
+{% set version = "0.12.7" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/voxel51-eta-{{ version }}.tar.gz
-  sha256: a638a0dbc4bb64f20629b32c60e74dd4f57287229fa7347a168ae7e17b5c87eb
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 09b72bf8005f2e2cf4403965a182f2659ab303fe5eee78c3aaffa52c3476ccd5
 
 build:
   noarch: python
