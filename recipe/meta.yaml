@@ -1,5 +1,12 @@
 {% set name = "voxel51-eta" %}
+<<<<<<< Updated upstream
 {% set version = "0.13.1" %}
+||||||| Stash base
+{% set version = "0.13.0" %}
+=======
+{% set version = "0.13.0" %}
+{% set python_min = "3.9" %}
+>>>>>>> Stashed changes
 
 package:
   name: {{ name|lower }}
