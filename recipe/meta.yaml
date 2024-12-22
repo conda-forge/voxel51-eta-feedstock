@@ -18,13 +18,13 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python 3.7
     - setuptools
     - wheel
     - importlib-metadata
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - argcomplete
     - dill
     - future
@@ -56,6 +56,7 @@ test:
     - eta --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/voxel51/eta
