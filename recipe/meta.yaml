@@ -1,13 +1,14 @@
 {% set name = "voxel51-eta" %}
-{% set version = "0.13.0" %}
+{% set version = "0.13.1" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: a815d714b6ec6df91e9f16b830aa290ea36a4a9328397dc72e98d3b21b2169bb
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: d1f1f67a7ffc70a755e05bb650a9649752a69997a2c78f361b63074518948c34
 
 build:
   noarch: python
@@ -18,7 +19,7 @@ build:
 
 requirements:
   host:
-    - python 3.7
+    - python {{ python_min }}
     - setuptools
     - wheel
     - importlib-metadata
