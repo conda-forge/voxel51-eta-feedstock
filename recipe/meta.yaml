@@ -1,5 +1,5 @@
 {% set name = "voxel51-eta" %}
-{% set version = "0.13.1" %}
+{% set version = "0.14.0" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: d1f1f67a7ffc70a755e05bb650a9649752a69997a2c78f361b63074518948c34
+  sha256: 9116818e6aa77e9d885cecbca96ec0f8be962ba5fe5e46f8482f0f0949f1814f
 
 build:
   noarch: python
